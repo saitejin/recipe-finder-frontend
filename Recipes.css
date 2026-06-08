@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #141e30, #243b55);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.align{
+    width: 100%;
+}
+
+.align-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 35px;
+}
+
+input{
+    width: 250px;
+    height: 45px;
+    padding-left: 15px;
+    border-radius: 12px;
+    border: 2px solid black;
+    outline: none;
+    font-size: 1rem;
+}
+
+button{
+    height: 45px;
+    padding: 0 18px;
+    border: none;
+    border-radius: 12px;
+    background: #ef3f0a;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #fe460e;
+    transform: translateY(-2px);
+}
+
+select{
+    height: 45px;
+    padding: 0 10px;
+    border-radius: 12px;
+    border: 2px solid black;
+    outline: none;
+    font-size: 1rem;
+}
+
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cards{
+    width: 280px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.cards:hover{
+    transform: translateY(-8px);
+}
+
+.item-image{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.text{
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.text h2,
+.text h3{
+    margin-bottom: 10px;
+}
+
+.text p{
+    margin: 8px 0;
+}
+
+.single-card{
+    width: 90%;
+    max-width: 900px;
+    padding: 30px;
+    margin: auto;
+    text-align: left;
+}
+
+.single-card h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.single-card .item-image{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.single-card p{
+    margin: 10px 0;
+    font-size: 16px;
+    color: #444;
+}
+
+.single-card h3{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #ef3f0a;
+}
+
+.single-card ul,
+.single-card ol{
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.single-card li{
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.single-card{
+    width: 95%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin: auto;
+}
+
+.recipe-title{
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.recipe-layout{
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.left-section{
+    width: 35%;
+}
+
+.right-section{
+    width: 65%;
+}
+
+.detail-image{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.left-section p{
+    margin: 12px 0;
+    font-size: 16px;
+    color: #444;
+}
+
+.right-section h3{
+    color: #ef3f0a;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.right-section ul,
+.right-section ol{
+    margin-left: 25px;
+}
+
+.right-section li{
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+@media(max-width:768px){
+
+    .recipe-layout{
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section{
+        width: 100%;
+    }
+
+}

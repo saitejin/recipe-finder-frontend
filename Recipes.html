@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes App</title>
+
+    <link rel="stylesheet" href="Recipes.css">
+</head>
+
+<body>
+<div class="align">
+
+    <div class="align-child">
+
+    <input type="search" id="value" placeholder="Search Your dish"/>
+
+    <button onclick="searchrecipes()">Search</button>
+
+    <select id="filter" onchange="filterby()">
+        <option>Filter by Cuisine</option>
+        <option>Italian</option>
+        <option>Asian</option>
+        <option>Indian</option>
+        <option>American</option>
+        <option>Mexican</option>
+        <option>Pakistani</option>
+        <option>Mediterranean</option>
+    </select>
+
+    <select id="Filtermeal" onchange="Filtermeal()">
+        <option>Filter by meal</option>
+        <option value="Breakfast">Breakfast</option>
+        <option value="Lunch">Lunch</option>
+        <option value="Dinner">Dinner</option>
+    </select>
+
+    <button onclick="getallrecipes()">Get all Recipes</button>
+
+    </div>
+
+    <div id="item" class="item"></div>
+
+    </div>
+    <script src="Recipes.js">
+
+    </script>
+
+</body>
+</html>
